@@ -1,0 +1,16 @@
+<div class="ui-g-12 ui-card-width">
+    <p-card>
+      <p-header>
+        <i class="fa fa-dollar"></i>
+        Deals
+      </p-header>
+      <p-dataTable [value]="deals">
+          <p-column field="investmentName" header="Investment Name"></p-column>
+          <p-column field="dateReceived" header="Date Received"></p-column>
+          <p-column field="dealTeam" header="Deal Team"></p-column>
+          <p-column field="pipelineStatus" header="Pipeline Status"></p-column>
+          <p-column field="dealDescription" header="Description"></p-column>
+          <p-column field="investmentAmount" header="Amount"></p-column>
+      </p-dataTable>
+    </p-card>
+  </div>

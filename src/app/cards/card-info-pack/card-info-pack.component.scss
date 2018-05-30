@@ -1,0 +1,86 @@
+@import '../base-card';
+
+
+
+
+:host {
+  ::ng-deep 
+  
+  p-card {
+
+    @include base-card;
+
+   
+    .ui-card-body {
+        padding: 0 !important;
+    }
+
+    .ui-card-title {
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    .ui-card-content {
+      margin-left: 10px;
+      margin-bottom: 10px;
+      overflow: scroll;
+    }
+  }
+  
+  p-card {
+    p-card {
+
+    @include base-card;
+
+    .ui-card{
+      min-height: 200px;
+      max-height: 200px;
+    }
+    .ui-card-body {
+        padding: 0 !important;
+        max-width: 50px;
+    }
+
+    .ui-card-title {
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    .ui-card-content {
+      margin-left: 10px;
+      margin-bottom: 10px;
+      overflow: scroll;
+      max-height: 100px;
+    
+    }
+    
+  }
+}
+
+
+
+}
+
+
+.ui-card-width {
+  min-width: 350px;
+}
+.ui-card-height {
+  max-height: 350px;
+}
+
+.ui-card-right-align-header{
+  float:right;
+  padding-right: 17px
+
+}
+
+.ui-card-img{
+  height:30px;
+  width: 30px;
+
+}
+
+.space3{
+  padding:7px;
+}

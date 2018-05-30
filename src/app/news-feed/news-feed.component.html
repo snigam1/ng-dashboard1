@@ -1,0 +1,27 @@
+<div class="feed-messages-container">
+  <div class="feed-message"
+       *ngFor="let feed of feeds | slice:0:5"
+       (click)="expandFeed(feed)">
+
+    <div class="message-icon">
+      <img class="photo-icon" src="{{ feed.urlToImage }}" *ngIf="feed.urlToImage">
+      <span class="sub-photo-icon"></span>
+    </div>
+    <div class="text-block text-message">
+      <div class="message-header">
+        <span class="author">{{ feed.author || feed.source.name }}</span>
+      </div>
+      <div class="message-content line-clamp" [ngClass]="{'line-clamp-2' : !feed.expanded}">
+        <span *ngIf="feed.preview">{{ feed.author }} </span>{{ feed.description }}
+      </div>
+      <div [ngClass]="{'hidden': !feed.expanded}" class="message-time">
+        <div class="post-time">
+          {{ feed.time }}
+        </div>
+        <div class="ago-time">
+          {{ feed.ago }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

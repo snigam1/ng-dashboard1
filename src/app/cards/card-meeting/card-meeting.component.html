@@ -1,0 +1,29 @@
+<div class="ui-g-12">
+    <p-card>
+        <p-header>
+            <i class="fa fa-calendar fa-fw"></i>
+            Meetings
+          </p-header>
+      <div>
+          <div class="feed-message" *ngFor="let meeting of meetings">
+
+              <div class='parent flex-parent'>
+                  <div class="child flex-child meeting-time message-content line-clamp">
+                      <span>{{ meeting.datetime }}</span>
+                  </div>
+                  <div class="child flex-child">
+                      <div class="message-header">
+                          <div class="meeting-subject">{{ meeting.subject }}</div>
+                          <div class="meeting-location">{{ meeting.location }}</div>
+                      </div>
+                  </div>
+                  <div class="child flex-child meeting-duration">
+                      <div class="">{{ meeting.duration }}</div>
+                  </div>
+              </div>
+
+            </div>
+        </div>
+    </p-card>
+  </div>
+

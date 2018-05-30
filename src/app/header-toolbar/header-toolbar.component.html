@@ -1,0 +1,13 @@
+<p-toolbar [ngClass]="['navbar','fixed-top']">
+  <div class="ui-toolbar-group-left">
+    <i class="fa fa-bars" (click)="childSidebar.showSidebar()"></i>
+  </div>
+
+  <div class="ui-toolbar-group-right">
+    <i class="fa fa-bars"></i>
+    <i class="fa fa-search"></i>
+    <i class="fa fa-trash"></i>
+  </div>
+</p-toolbar>
+
+<app-sidebar></app-sidebar>

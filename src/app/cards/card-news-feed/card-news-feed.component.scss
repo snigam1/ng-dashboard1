@@ -1,0 +1,12 @@
+@import '../base-card';
+
+:host {
+  ::ng-deep p-card {
+
+    @include base-card;
+
+    //@import '../../../theme/sass/conf/conf';
+
+
+  }
+}

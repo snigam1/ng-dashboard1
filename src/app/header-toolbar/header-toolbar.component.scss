@@ -1,0 +1,26 @@
+:host {
+    ::ng-deep p-toolbar {
+        padding: 0;
+
+        .ui-toolbar-group-left,
+        .ui-toolbar-group-right {
+            line-height: 2em;
+            padding-left: 6px;
+            i {
+                padding-right: 8px;
+            }
+
+        }
+
+        .ui-widget-header {
+            background-color: #2d353c;
+            color: white;
+            line-height: 1.3em;
+        }
+
+        .ui-corner-all {
+            border-radius: 0;
+        }
+    }
+}
+

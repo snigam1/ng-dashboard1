@@ -1,0 +1,37 @@
+    <p-card>
+        <p-header>
+            <span class="ui-card-right-align-header"> <i class="fa fa-window-maximize"></i> </span>   
+            <span>
+            <i class="fa fa-info fa-fw"></i>
+                Info Packs
+            </span>
+            </p-header>
+            
+        <p-card *ngFor="let infoPack of infoPacks; let i = index" class="ui-g-12" 
+                >
+                <p-header>
+                        <!-- <span class="ui-card-right-align-header"> <i class="fa fa-plus"></i> </span>    -->
+                        
+                        <i class="fa fa-info fa-fw"></i> 
+                        {{infoPack.title}} 
+                        
+                        <img  *ngIf="infoPack.logoUrl" src={{infoPack.logoUrl}} class='ui-card-img'/> 
+                        
+                         
+                    </p-header>
+            <div style="max-height:200px;">
+                    {{infoPack.bodyContent}}
+                </div>
+            <p-footer>
+                <!-- Owner: {{infoPack.owner}} -->
+                <span style="padding-right: 14px;"> <i class="fa fa-building-o"></i>   {{infoPack.clients}} </span>
+                <span  style="padding-right: 14px;"><i class="fa fa-user"></i>  {{infoPack.contacts}}  </span>
+                <span style="padding-right: 14px;"> <i class="fa fa-dollar"></i>  {{infoPack.dealAmount}}  Ml </span>
+                <span style="padding-right: 14px;"> <i class="fa fa-sticky-note"></i>  {{infoPack.notes}}   </span>
+                <span style="padding-right: 14px;"> <i class="fa fa-calendar"></i>  {{infoPack.meetings}}   </span>
+                
+            </p-footer>
+        </p-card>
+
+</p-card>
+

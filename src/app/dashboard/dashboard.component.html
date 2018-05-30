@@ -1,0 +1,34 @@
+<div class="dashboard">
+  <div class="ui-g">
+    <div class="ui-g-3">
+            <div class="ui-g-12">
+              <app-card-info-pack [infoPacks]="layout.cards.infoPacks">
+              </app-card-info-pack>
+            </div>
+          </div>
+    <div class="ui-g-6">
+            <div class="ui-g-12 zero-padding">
+              <app-card-activity-feed *ngIf="layout.cards.newsFeed">
+              </app-card-activity-feed>
+            </div>
+
+            <div class="ui-g-12">
+              <app-card-deal [deals]="layout.cards.deals" *ngIf="layout.cards.deals">
+              </app-card-deal>
+            </div>
+    </div>
+    <div class="ui-g-3">
+            <div class="ui-g-12 zero-padding">
+              <app-card-meeting [meetings]="layout.cards.meetings" *ngIf="layout.cards.meetings">
+              </app-card-meeting>
+            </div>
+            <div class="ui-g-12 zero-padding">
+              <app-card-task [tasks]="layout.cards.tasks"></app-card-task>
+            </div>
+            <div class="ui-g-12 zero-padding">
+              <app-card-news-feed *ngIf="layout.cards.newsFeed">
+              </app-card-news-feed>
+            </div>
+    </div>
+  </div>
+</div>

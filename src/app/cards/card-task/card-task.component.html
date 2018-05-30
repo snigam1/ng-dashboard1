@@ -1,0 +1,25 @@
+<div class="ui-g-12">
+    <p-card>
+        <p-header>
+            <i class="fa fa-calendar fa-fw"></i>
+            Tasks
+        </p-header>
+        <div>
+            <div class="feed-tasks" *ngFor="let task of tasks">
+
+                <div class='parent flex-parent'>
+                    <div class="child flex-child meeting-time message-content line-clamp">
+                        <span>{{ task.dueDate }}</span>
+                    </div>
+                     <div class="child flex-child">
+                        <div class="task-header">
+                            <div class="task-description">{{ task.description }}</div>
+                        </div> 
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </p-card>
+</div>

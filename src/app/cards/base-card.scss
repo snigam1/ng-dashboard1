@@ -1,0 +1,36 @@
+@import '../sass/styles';
+
+@mixin base-card {
+  .ui-card-header {
+    
+    padding: 8px 0 8px 0;
+    font-size: 14px;
+    font-weight: bold;
+
+    p-header {
+      margin-left: 10px;
+    }
+  }
+
+  .ui-card-footer {
+    background-color: $color-card-header;
+    padding: 8px 0 8px 0;
+    font-size: 14px;
+    font-weight: bold;
+    p-footer {
+      margin-left: 10px;
+    }
+  }
+
+  .ui-widget-content {
+    border: solid 1px #d8d6d6;
+    background-color: $color-card-body;
+    color: #525c65;
+  }
+
+  .ui-card-content {
+    p {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import '../base-card';
+
+
+
+:host {
+    ::ng-deep p-card {
+  
+      @include base-card;
+  
+     
+      .ui-card-body {
+          padding: 0 !important;
+      }
+  
+      .ui-card-title {
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+  
+      .ui-card-content {
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  
+  
+  .ui-card-width {
+    min-width: 350px;
+  }
+  .ui-card-height {
+    max-height: 350px;
+  }
+  
